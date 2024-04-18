@@ -1,0 +1,525 @@
+ index.html 
+=====================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Realtor.ca</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="pic-container">
+            <div class="pic">
+                <img src="pexels-binyamin-mellish-106399.jpg" alt="Picture 1">
+                <h3>JAN 04, 2024</h3>
+                <p>Sapphire Haven</p>
+                <a href="PIC1_INFO.HTML">Click here for more info</a>
+            </div>
+            <div class="pic">
+                <img src="pexels-pixabay-164558.jpg" alt="Picture 2">
+                <h3>FEB 26, 2024</h3>
+                <p>Cozy Corner Cottage</p>
+                <a href="PIC2_INFO.HTML">Click here for more info</a>
+            </div>
+            <div class="pic">
+                <img src="pexels-tomáš-malík-2581922.jpg" alt="Picture 3">
+                <h3>FEB 27, 2024</h3>
+                <p>Dreamcatcher</p>
+                <a href="PIC3_INFO.HTML">Click here for more info</a>
+            </div>
+            <div class="pic">
+                <img src="Beautiful Houses Pictures HD & 4K_ Inspirational Beautiful Houses Pictures In Pakistan.jpg" alt="Picture 4">
+                <h3>MAR 04, 2024</h3>
+                <p>Charming Light Brown House with Classic Dark Brown Accents</p>
+                <a href="INFO4_INFO.HTML">Click here for more info</a>
+            </div>
+        </div>
+        <a href="house-info.html" class="more-info-btn">More Information</a>
+    </main>
+
+    <footer id="contact">
+        <h2>Why use a REALTOR®?</h2>
+        <div class="contact-container">
+            <div class="video-container">
+                <video width="1350" height="300" autoplay loop muted>
+                    <source src="y2mate.com - Beautiful Interior Details  Luxury Home Tour_1080p.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <h4 >Knowledge
+                  <p > With valuable real state market Knowledge,realtor ensure to work you are getting accurate and objective inormation when it comes to buying or seling your home .</p></h4>
+            </div>
+            <div class="form-container">
+                
+                
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+=============================================================================================================
+contact.html 
+=============
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="INDEX.HTML">Back to Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="form-container">
+            <h3>Send us a message</h3>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+</html>
+
+======================================================================================================
+house-info.html
+================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houses Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="INDEX.HTML">Back to Home</a></li>
+        </ul>
+    </nav>
+    <h1>Houses Information</h1>
+    <table>
+        <caption>Houses Information</caption>
+        <tr>
+            <th>House Name</th>
+            <th>Price</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>Sapphire Haven</td>
+            <td>$108,08</td>
+            <td>Upscale Society</td>
+        </tr>
+        <tr>
+            <td>Cozy Corner Cottage</td>
+            <td>$170,960</td>
+            <td>Tranquil Neighborhood</td>
+        </tr>
+        <tr>
+            <td>Dreamcatcher</td>
+            <td>$456,903</td>
+            <td>Large Green Field</td>
+        </tr>
+        <tr>
+            <td>Charming Light Brown House with Classic Dark Brown Accents</td>
+            <td>$1080,800</td>
+            <td>SM SOS</td>
+        </tr>
+    </table>
+
+    <footer>
+    </footer>
+</body>
+</html>
+=======================================================================================================
+style.css
+===========
+body {
+  background-color: rgb(64, 136, 160);
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.pic-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.pic {
+  text-align: center;
+  margin: 20px;
+}
+
+.pic img {
+  width: 200px;
+  height: 200px;
+}
+
+.pic h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.pic p {
+  color: #666;
+}
+
+.house-table {
+  margin-top: 20px;
+}
+
+.house-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.house-table th,
+.house-table td {
+  border: 1px solid #fff;
+  padding: 8px;
+}
+
+.house-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+h4 {
+  background-color: rgb(44, 44, 124);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+==========================================================================================
+pic1_info.html
+===============
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sapphire Haven - Elegant Dark Blue Residence in an Upscale Society</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="INDEX.HTML">Back to Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="pic-info">
+            <div class="pic">
+                <img src="pexels-binyamin-mellish-106399.jpg" alt="Picture 1">
+            </div>
+            <div class="info">
+                <h2>Sapphire Haven </h2>
+                <p><pre>
+
+                    
+                    
+                    Welcome to Sapphire Haven, an elegant residence nestled within an upscale society, exuding sophistication and luxury at every turn. This stunning property offers a harmonious blend of style, comfort, and prestige, providing an exquisite haven for discerning homeowners.
+                    
+                    As you approach Sapphire Haven, you'll be captivated by its stately presence and refined architectural details. The striking dark blue exterior commands attention, set amidst manicured lawns and lush landscaping that elevate its curb appeal to unparalleled heights.
+                    
+                    Step inside this luxurious residence, and you'll be greeted by an atmosphere of grandeur and opulence. The interior showcases impeccable craftsmanship and attention to detail, with high-end finishes and designer touches throughout.
+                    
+                    The main living area embodies elegance and refinement, with expansive windows offering panoramic views of the surrounding landscape. Relax in the sophisticated lounge area, complete with plush seating, a statement fireplace, and bespoke lighting fixtures that create an ambiance of comfort and luxury.
+                    
+                    Adjacent to the living area is the gourmet kitchen, a culinary masterpiece designed for both functionality and style. State-of-the-art appliances, custom cabinetry, and exquisite countertops elevate the cooking experience, while a spacious island provides ample space for meal preparation and casual dining.
+                    
+                    Sapphire Haven boasts four luxurious bedrooms, each offering a private sanctuary for rest and relaxation. The palatial master suite exudes sophistication, featuring a spacious layout, a lavish ensuite bathroom, and a private balcony overlooking the serene surroundings. Three additional bedrooms, each thoughtfully appointed with luxurious amenities, provide comfort and privacy for family members or guests.
+                    
+                    Outside, the expansive grounds of the upscale society offer a wealth of amenities and recreational opportunities. Take a leisurely stroll along landscaped pathways, enjoy a game of tennis on the community courts, or relax by the sparkling swimming pool, surrounded by lush greenery and tranquil water features.
+                    
+                    Additional features of Sapphire Haven include a well-appointed bathroom, a dedicated home office or study, and a three-car garage for secure parking and storage.
+                    
+                    With its prestigious location, exquisite design, and unparalleled amenities, Sapphire Haven represents the epitome of luxury living in an upscale society. Don't miss your opportunity to experience the pinnacle of sophistication and elegance in this exceptional residence.
+                    
+                    Price: $XXX,XXX (Price may vary based on market conditions and property valuation)
+                    
+                    Contact us today to arrange a private viewing of Sapphire Haven and discover the unparalleled luxury that awaits within its walls.</pre></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
+=====================================================================
+pic2_info
+===============
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cozy Corner Cottage - Charming Society Home in a Tranquil Neighborhood</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="INDEX.HTML">Back to Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="pic-info">
+            <div class="pic">
+                <img src="pexels-pixabay-164558.jpg" alt="Picture 1">
+            </div>
+            <div class="info">
+                <h2> Cozy Corner Cottage</h2>
+                <p><pre>
+
+                    
+                    Welcome to Cozy Corner Cottage, a charming society home nestled in a tranquil neighborhood. This delightful property offers a perfect blend of comfort, convenience, and community, providing an idyllic retreat for its residents.
+                    
+                    Situated within a well-established society, Cozy Corner Cottage exudes a sense of warmth and belonging from the moment you arrive. The quaint exterior features classic architectural details, including a pitched roof, inviting porch, and tasteful landscaping, creating a welcoming ambiance.
+                    
+                    Step inside this cozy cottage, and you'll immediately feel at home. The interior boasts a cozy yet stylish design, with comfortable furnishings, neutral tones, and plenty of natural light streaming in through the windows.
+                    
+                    The main living area is the heart of the home, offering a comfortable space for relaxation and entertainment. Gather with loved ones in the inviting lounge area, where plush seating and a fireplace create a cozy atmosphere for gatherings and quiet evenings alike.
+                    
+                    Adjacent to the living area is the well-appointed kitchen, equipped with modern appliances, ample storage space, and a convenient breakfast bar for casual dining. Whether you're preparing a family feast or whipping up a quick meal, this kitchen is sure to inspire your culinary creativity.
+                    
+                    Cozy Corner Cottage features three inviting bedrooms, providing plenty of space for rest and rejuvenation. The master suite offers a peaceful retreat, complete with a private ensuite bathroom and ample closet space. Two additional bedrooms are perfect for accommodating guests, children, or transforming into a home office or hobby room to suit your needs.
+                    
+                    Outside, the charming society setting offers a sense of community and belonging. Enjoy leisurely strolls along tree-lined streets, meet neighbors at community events and gatherings, or simply relax in the shared green spaces dotted throughout the neighborhood.
+                    
+                    Additional features of Cozy Corner Cottage include a well-appointed bathroom, a designated laundry area, and storage space for all your belongings.
+                    
+                    With its welcoming ambiance, convenient location, and sense of community, Cozy Corner Cottage is the perfect place to call home. Don't miss your chance to experience the charm and comfort of society living at its finest.
+                    
+                    Price: $ 104,300
+                    
+                    Contact us today to schedule a viewing and discover the joys of living in Cozy Corner Cottage firsthand.</pre></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
+=================================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1> Dreamcatcher - Enchanting Black Cottage in a Vast Green Field</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="INDEX.HTML">Back to Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="pic-info">
+            <div class="pic">
+                <img src="pexels-tomáš-malík-2581922.jpg" alt="Picture 1">
+            </div>
+            <div class="info">
+                <h2>Dreamcatcher</h2>
+                <p><pre>
+                    
+                    Welcome to Dreamcatcher, a whimsical black cottage nestled amidst a vast, verdant green field. This enchanting property exudes charm and tranquility, offering a serene retreat away from the hustle and bustle of city life.
+                    
+                    As you approach Dreamcatcher, you'll be greeted by the picturesque sight of the black cottage standing proudly against the lush backdrop of the expansive green field. The contrast between the deep black exterior and the vibrant green surroundings creates a striking and captivating aesthetic.
+                    
+                    Step inside this cozy cottage, and you'll immediately feel its warmth and inviting atmosphere. The interior boasts a rustic yet elegant design, with exposed wooden beams, hardwood floors, and charming details throughout.
+                    
+                    The main living area features a comfortable lounge area, perfect for relaxing by the fireplace on cooler evenings or enjoying peaceful moments with a good book. Large windows frame panoramic views of the surrounding countryside, flooding the space with natural light and creating a seamless connection to the outdoors.
+                    
+                    Adjacent to the living area is the charming kitchen, outfitted with modern appliances, sleek countertops, and ample cabinet space. Whether you're preparing a hearty meal for family and friends or whipping up a quick snack, this kitchen is sure to inspire your culinary adventures.
+                    
+                    Dreamcatcher offers two cozy bedrooms, each providing a tranquil sanctuary for rest and relaxation. The master bedroom boasts its own private ambiance, complete with a cozy fireplace and enchanting views of the surrounding landscape. The second bedroom is equally inviting, offering comfort and serenity for guests or family members.
+                    
+                    Outside, the expansive green field surrounding Dreamcatcher offers endless possibilities for outdoor enjoyment. Spend your days exploring the vast expanse of nature, picnicking amidst the wildflowers, or simply basking in the beauty of the countryside.
+                    
+                    Additional features of Dreamcatcher include a well-appointed bathroom, a convenient laundry area, and ample storage space for all your belongings.
+                    
+                    With its idyllic setting, charming design, and peaceful ambiance, Dreamcatcher is the perfect place to escape the stresses of modern life and reconnect with nature. Don't miss your chance to make this enchanting black cottage your own slice of paradise.
+                    
+                    Price: $1,080,108
+                    
+                    Contact us today to schedule a viewing and experience the magic of Dreamcatcher firsthand.</pre></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
+==================================================
+info_info.html
+===================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Charming light brown house with classic dark brown accents</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="INDEX.HTML">Back to Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="charming light brown house with classic dark brown accents">
+            <div class="pic">
+                <img src="Beautiful Houses Pictures HD & 4K_ Inspirational Beautiful Houses Pictures In Pakistan.jpg" alt="Picture 1">
+            </div>
+            <div class="info">
+                <h2>charming light brown house with classic dark brown accents</h2>
+                <p><pre>Welcome to this charming light brown house with classic dark brown accents, nestled in a peaceful neighborhood. This beautifully crafted home offers a perfect blend of elegance and comfort, providing an inviting retreat for its future owners.
+
+                    Upon arrival, you'll be greeted by the warm and welcoming exterior, adorned with light brown siding complemented by tasteful dark brown trimmings. The carefully manicured front yard adds to the curb appeal, creating a picturesque setting.
+                    
+                    As you step inside, you'll be captivated by the spacious and airy interior bathed in natural light. The open floor plan seamlessly connects the living spaces, creating an ideal environment for both relaxation and entertainment.
+                    
+                    The main level features a cozy living room, perfect for cozying up with loved ones on chilly evenings. Adjacent to the living room is the well-appointed kitchen, boasting modern appliances, ample storage space, and elegant countertops. Whether you're preparing a quick breakfast or hosting a gourmet dinner party, this kitchen is sure to inspire your culinary creations.
+                    
+                    The dining area adjacent to the kitchen provides a charming space to enjoy meals with family and friends, with large windows offering lovely views of the surrounding landscape.
+                    
+                    This house offers three spacious bedrooms, each thoughtfully designed to provide comfort and privacy. The master bedroom features a serene ambiance, complete with an ensuite bathroom and a walk-in closet. The additional bedrooms are perfect for accommodating guests, children, or transforming into a home office or hobby room to suit your lifestyle needs.
+                    
+                    The outdoor space is equally impressive, with a private backyard offering plenty of room for outdoor activities, gardening, or simply basking in the sunshine. Enjoy alfresco dining on the patio or relax in the shade of mature trees, creating your own oasis of tranquility.
+                    
+                    Additional features of this home include a well-appointed bathroom, a convenient laundry room, and a two-car garage for parking and storage.
+                    
+                    With its desirable location, elegant design, and thoughtful amenities, this light brown house with classic dark brown accents presents an exceptional opportunity for those seeking a place to call home. Don't miss your chance to make this exquisite property yours!
+                    
+                    Price: $ 180,018.00
+                    
+                    Contact us today to schedule a viewing and experience the charm and elegance of this beautiful home firsthand.</pre></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
+================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

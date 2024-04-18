@@ -1,0 +1,103 @@
+body {
+  background-color: rgb(64, 136, 160);
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.pic-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.pic {
+  text-align: center;
+  margin: 20px;
+}
+
+.pic img {
+  width: 200px;
+  height: 200px;
+}
+
+.pic h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.pic p {
+  color: #666;
+}
+
+.house-table {
+  margin-top: 20px;
+}
+
+.house-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.house-table th,
+.house-table td {
+  border: 1px solid #fff;
+  padding: 8px;
+}
+
+.house-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+h4 {
+  background-color: rgb(44, 44, 124);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.pic:last-child {
+  margin-bottom: 0; 
+}
